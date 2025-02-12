@@ -11,7 +11,7 @@ public class Ejercicio05 {
     argumentos en la línea de comandos.*/
     public static void main(String[] args) {
         try {
-            BufferedReader brPalabras = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Leyenda.txt"));
+            BufferedReader brPalabras = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Leyenda.txt"));
             
             // String palabra = System.console().readLine("Ingresa la palabra que quieres buscar: ");
 

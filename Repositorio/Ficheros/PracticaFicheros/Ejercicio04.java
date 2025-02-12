@@ -16,8 +16,8 @@ public class Ejercicio04 {
     palabras_sort.txt. Suponemos que cada palabra ocupa una línea.*/
     public static void main(String[] args) {
         try {
-            BufferedReader brPalabras = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Palabras.txt"));
-            BufferedWriter bwPalabrasSort = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Palabras_Sort.txt"));
+            BufferedReader brPalabras = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Palabras.txt"));
+            BufferedWriter bwPalabrasSort = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Palabras_Sort.txt"));
             
             String linea = "";
 

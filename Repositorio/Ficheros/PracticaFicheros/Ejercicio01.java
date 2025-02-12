@@ -11,21 +11,19 @@ public class Ejercicio01 {
     public static void main(String[] args) {
 
         try {BufferedWriter bwNumPrimos = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Primos.dat"));
-            for (int i =10; i <= 500; i++) {
-                if (i<= 1) {
-                    bwNumPrimos.write(String.valueOf(i));
-                }else if (i == 2) {
-                    bwNumPrimos.write(String.valueOf(i));;
+            for (int i = 2; i <= 500; i++) {
+                if (i == 2) {
+                    bwNumPrimos.write(String.valueOf(i) + "\n");;
                 }else{
                     boolean esPrimo = true;
-                    for (int j = 2; j <= 500 ; j++) {
+                    for (int j = 2; j <= Math.sqrt(i) ; j++) {
                         if (i % j == 0) {
                             esPrimo = false;
                             break;                       
                         }
                     }
                     if (esPrimo) {
-                    bwNumPrimos.write(String.valueOf(i));
+                    bwNumPrimos.write(String.valueOf(i) + "\n");
                     }
                 }
             }
