@@ -1,4 +1,4 @@
-package Ficheros.PracticaFicherosCorrejido;
+package Ficheros.PracticaFicherosCorrejidos;
 
 public class Ejercicio05 {
     

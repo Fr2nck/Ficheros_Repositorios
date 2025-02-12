@@ -1,4 +1,4 @@
-package Ficheros.PracticaFicherosCorrejido;
+package Ficheros.PracticaFicherosCorrejidos;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,8 +12,8 @@ public class Ejercicio04 {
     public static void main(String[] args) {
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Palabras.txt"));
-            BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Palabras_Sort.txt"));
+            BufferedReader br = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Palabras.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Palabras_Sort.txt"));
 
             ArrayList<String> a = new ArrayList<String>();
 

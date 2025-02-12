@@ -1,4 +1,4 @@
-package Ficheros.PracticaFicherosCorrejido;
+package Ficheros.PracticaFicherosCorrejidos;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Ejercicio02 {
     public static void main(String[] args) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Primos.dat"));
+            BufferedReader br = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Primos.dat"));
 
             String linea = "";
             while (linea != null) { 
