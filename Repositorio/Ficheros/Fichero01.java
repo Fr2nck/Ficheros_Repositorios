@@ -15,7 +15,7 @@ public class Fichero01 {
         try {
 
             // (BufferedReader)almacena la informacion (caracter por caracter) en tiempo real
-            BufferedReader brAbancay =new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\" + ciudad + ".txt"));
+            BufferedReader brAbancay =new BufferedReader(new FileReader(".//Ficheros//Ficheros//" + ciudad + ".txt"));
             String linea = "";
 
             // Estructura repetitiva para leer las lineas del archibo
