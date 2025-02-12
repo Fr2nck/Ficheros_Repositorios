@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Fichero03 {
     public static void main(String[] args) {
         
-        try {BufferedWriter bwFrutas = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Frutas.txt"));
+        try {BufferedWriter bwFrutas = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//Ficheros//Frutas.txt"));
 
             bwFrutas.write("Fresa\n");
             bwFrutas.write("Naranja\n");
