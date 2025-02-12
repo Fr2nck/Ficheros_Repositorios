@@ -11,13 +11,14 @@ public class EjercicioEnClase {
         String espacio = " ";
         String digitos = "0123456789";
         int contadorEspacios = 0;
+        int contadorDigitos = 0;
         int contadorCaracter = 0;
         
 
         for (int i = 0; i < frase.length(); i++) {
             if (frase.charAt(i) == espacio.charAt(0)) {
                 contadorEspacios++;
-            }else if(frase.charAt(i) == digitos.charAt(0)|| frase.charAt(i) == digitos.charAt(1)){
+            }else if(frase.charAt(i) == digitos.charAt(0)|| frase.charAt(i) == digitos.charAt(1)|frase.charAt(i) == digitos.charAt(2)||frase.charAt(i) == digitos.charAt(3)||frase.charAt(i) == digitos.charAt(4)||frase.charAt(i) == digitos.charAt(5)||frase.charAt(i) == digitos.charAt(6)||frase.charAt(i) == digitos.charAt(7)||frase.charAt(i) == digitos.charAt(8)||frase.charAt(i) == digitos.charAt(9)){
 
             }
             else{                
@@ -25,6 +26,7 @@ public class EjercicioEnClase {
             }
         }
         System.out.println("El numero de espacios en la frase es: " + contadorEspacios);
+        System.out.println("El numero de digitos en una frase es: " + contadorDigitos);
         System.out.println("El numero de letras de la frase es: " + contadorCaracter);
     }
 }
