@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Fichero02 {
     public static void main(String[] args) {
         try {
-            BufferedReader brNotas = new BufferedReader(new FileReader(".//Ficheros//Notas.txt"));
+            BufferedReader brNotas = new BufferedReader(new FileReader(".//Repositorio//Ficheros//Ficheros//Notas.txt"));
             
             String linea = "0";
             int i = 0;

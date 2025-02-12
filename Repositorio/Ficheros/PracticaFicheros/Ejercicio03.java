@@ -16,9 +16,9 @@ public class Ejercicio03 {
     public static void main(String[] args) {
         
         try { 
-            BufferedReader brColombia = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Colombia.txt"));
-            BufferedReader brPeru = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Peru.txt"));
-            BufferedWriter bwAmericaLatina = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\AmericaLatina.txt"));
+            BufferedReader brColombia = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Colombia.txt"));
+            BufferedReader brPeru = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Peru.txt"));
+            BufferedWriter bwAmericaLatina = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//AmericaLatina.txt"));
 
             String linea01 = "";
             String linea02 = "";

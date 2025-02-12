@@ -10,7 +10,7 @@ public class Ejercicio01 {
      los números primos que hay entre 1 y 500.*/
     public static void main(String[] args) {
 
-        try {BufferedWriter bwNumPrimos = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Primos.dat"));
+        try {BufferedWriter bwNumPrimos = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Primos.dat"));
             for (int i =10; i <= 500; i++) {
                 if (i<= 1) {
                     bwNumPrimos.write(String.valueOf(i));

@@ -1,4 +1,4 @@
-package Ficheros.PracticaFicherosCorrejido;
+package Ficheros.PracticaFicherosCorrejidos;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ public class Ejercicio01 {
     public static void main(String[] args) {
         try {
             
-            BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Primos.dat"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Primos.dat"));
             for (int i = 1; i < 501; i++) {
                 if (esPrimo(i)) {
                     bw.write(String.valueOf(i) + "\n");

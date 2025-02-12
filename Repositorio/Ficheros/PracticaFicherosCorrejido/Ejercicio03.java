@@ -1,4 +1,4 @@
-package Ficheros.PracticaFicherosCorrejido;
+package Ficheros.PracticaFicherosCorrejidos;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,9 +9,9 @@ import java.io.IOException;
 public class Ejercicio03 {
     public static void main(String[] args) {
         try {
-            BufferedReader brColombia = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Colombia.txt"));
-            BufferedReader brPeru = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\Peru.txt"));
-            BufferedWriter bwAmericaLatina = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicherosCorrejido\\AmericaLatina.txt"));
+            BufferedReader brColombia = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Colombia.txt"));
+            BufferedReader brPeru = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicherosCorrejidos//FicherosPracticaCorrejidos//Peru.txt"));
+            BufferedWriter bwAmericaLatina = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//PracticaFicherosCorrejido//FicherosPracticaCorrejidox//AmericaLatina.txt"));
 
             String linea1 = "";
             String linea2 = "";

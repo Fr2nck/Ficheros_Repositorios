@@ -10,9 +10,9 @@ import java.io.IOException;
 public class Fichero04 {
     public static void main(String[] args) {
         try{
-        BufferedReader brAbancay = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Abancay.txt")) ;
-        BufferedReader brAndahuaylas = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Andahuaylas.txt")) ;
-        BufferedWriter bwApurimac = new BufferedWriter(new FileWriter("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Apurimac.txt"));
+        BufferedReader brAbancay = new BufferedReader(new FileReader(".//Repositorio//Ficheros//Ficheros//Abancay.txt")) ;
+        BufferedReader brAndahuaylas = new BufferedReader(new FileReader(".//Repositorio//Ficheros//Ficheros//Andahuaylas.txt")) ;
+        BufferedWriter bwApurimac = new BufferedWriter(new FileWriter(".//Repositorio//Ficheros//Ficheros//Apurimac.txt"));
         
         String linea01 = "";
         String linea02 = "";

@@ -10,7 +10,7 @@ public class Ejercicio02 {
     y que muestre los números por pantalla.*/
     public static void main(String[] args) {
 
-        try {BufferedReader brNumPrimos = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Primos.dat"));
+        try {BufferedReader brNumPrimos = new BufferedReader(new FileReader(".//Repositorio//Ficheros//PracticaFicheros//FicherosPractica//Primos.dat"));
             String linea = "";
 
             while (linea != null) {
