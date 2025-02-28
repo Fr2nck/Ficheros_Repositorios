@@ -15,13 +15,14 @@ public class Pregunta03 {
     crea un fichero con nombre holav2.java que contiene el código de hola.java 
     pero sin los comentarios. */
     public static void main(String[] args) {
+
         if (args.length != 2) {
             System.out.println("Uso: quita_comentarios PROGRAMA_ORIGINAL PROGRAMA_LIMPIO");
             return;
         }
 
-        try (BufferedReader br = new BufferedReader(new FileReader(".//Repositorio//Examenes//ExamenParcial02_Cancelado//Ficheros_ExamenParcial02_Cancelado//HolaMundo.java"));
-             PrintWriter pw = new PrintWriter(new FileWriter(".//Repositorio//Examenes//ExamenParcial02_Cancelado//Ficheros_ExamenParcial02_Cancelado//HolaMundoV02.java"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Kumiho\\Desktop\\Universidad\\2024-02\\Algoritmos y programación 2\\Ficheros_Repositorios\\Repositorio\\Examenes\\ExamenParcial02_Cancelado\\Ficheros_ExamenParcial02_Cancelado\\HolaMundo.java"));
+             PrintWriter pw = new PrintWriter(new FileWriter("C:\\Users\\Kumiho\\Desktop\\Universidad\\2024-02\\Algoritmos y programación 2\\Ficheros_Repositorios\\Repositorio\\Examenes\\ExamenParcial02_Cancelado\\Ficheros_ExamenParcial02_Cancelado\\HolaMundoV02.java"))) {
 
             String linea;
 
@@ -30,13 +31,13 @@ public class Pregunta03 {
                 if (!linea.trim().startsWith("//")) {
                     pw.println(linea);
                 }
-            }
-
+            }            
             br.close();
             pw.close();
             System.out.println("Comentarios eliminados correctamente.");
+             
         } catch (IOException e) {
             System.out.println("Error al procesar los archivos: " + e.getMessage());
-        }  
+        }
     }
 }
