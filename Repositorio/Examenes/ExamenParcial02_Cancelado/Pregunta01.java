@@ -1,7 +1,7 @@
 package Examenes.ExamenParcial02_Cancelado;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+    import java.util.ArrayList;
+    import java.util.HashMap;
 
 public class Pregunta01 {
     /* Un supermercado de productos ecológicos necesita un programa para gestionar 
@@ -43,39 +43,44 @@ public class Pregunta01 {
         ArrayList<Integer> listaCantidades = new ArrayList<>();
         ArrayList<Double> listaSubtotales = new ArrayList<>();
 
+        // Bucle infinito hasta que se ingrese la palabra fin
         while (true) {
             System.out.print("Producto: "); 
             String producto = System.console().readLine();
             if (producto.equalsIgnoreCase("fin")) {
                 break; 
             }
+
             System.out.print("Cantidad: "); 
             int cantidad = Integer.parseInt(System.console().readLine()); 
-            
+
             // Verifica si el producto está disponible
             if (productos.containsKey(producto)) { 
-                listaProductos.add(producto); // Añade el producto a la lista
-                listaCantidades.add(cantidad); // Añade la cantidad a la lista
-                double subtotal = productos.get(producto) * cantidad; // Calcula el subtotal
-                listaSubtotales.add(subtotal); // Añade el subtotal a la lista
+                listaProductos.add(producto); 
+                listaCantidades.add(cantidad); 
+                double subtotal = productos.get(producto) * cantidad; 
+                listaSubtotales.add(subtotal); 
+            // Si no esta disponible
             } else {
-                System.out.println("Producto no disponible"); // Mensaje si el producto no está disponible
+                System.out.println("Producto no disponible");
             }
         }
 
         // Imprime la tabla con los detalles de la compra
-        System.out.println("Producto  Precio  Cantidad  Subtotal");
+        System.out.println("Producto    Precio   Cantidad   Subtotal");
         System.out.println("----------------------------------------");
-        double total = 0; // Inicializa el total en 0
+        double total = 0;
+
+        
         for (int i = 0; i < listaProductos.size(); i++) {
-            String prod = listaProductos.get(i); // Obtiene el nombre del producto
-            double precio = productos.get(prod); // Obtiene el precio del producto
-            int cantidad = listaCantidades.get(i); // Obtiene la cantidad
-            double subtotal = listaSubtotales.get(i); // Obtiene el subtotal
-            System.out.printf("%-10s %.2f %9d %.2f%n", prod, precio, cantidad, subtotal); // Imprime los detalles del producto
-            total += subtotal; // Suma el subtotal al total
+            String prod = listaProductos.get(i);
+            double precio = productos.get(prod);
+            int cantidad = listaCantidades.get(i); 
+            double subtotal = listaSubtotales.get(i); 
+            System.out.printf("%-10s %.2f %9d %.2f%n", prod, precio, cantidad, subtotal);
+            total += subtotal;
         }
         System.out.println("----------------------------------------");
-        System.out.printf("Total: %.2f%n", total); // Imprime el total de la compra
+        System.out.printf("Total: %.2f%n", total);
     }
 }
