@@ -34,6 +34,4 @@ public class Pregunta06{
         }
         System.out.println();
     }
-    
-
 }

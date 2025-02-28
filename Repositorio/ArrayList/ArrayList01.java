@@ -51,8 +51,6 @@ public class ArrayList01 {
         for (String color:myList){
             System.out.println(color);
         }
-
-
         /* 
         ArrayList que contenga numeros*
         //Inicializamos el arrayList
