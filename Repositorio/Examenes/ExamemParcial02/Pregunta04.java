@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Pregunta04 {
@@ -56,14 +55,15 @@ public class Pregunta04 {
             // Pedimos la palabra que se quiera buscar
             System.out.print("Ingresa la palabra de la cual quieras los sinonimos: ");
             String palabra = System.console().readLine();
-            if (palabra.equalsIgnoreCase("fin")) {
+            if (palabra.equalsIgnoreCase("salir")) {
                 break;
             }
+
             String sinonimo  = dicSinoni.get(palabra);
-             System.out.println("El valor de sinonimo es: " + sinonimo );
+            System.out.println("El valor de sinonimo es: " + sinonimo );
 
             // Mostramos la palabra con sus respectivos sinonimos
-            if (dicSinoni.containsValue(sinonimo)) {
+            if (dicSinoni.containsKey(palabra)) {
                 System.out.println("Los sinonimos de la palabra, " + palabra + " son: " + dicSinoni.get(sinonimo));
             } else {
                 System.out.println("No conozco los sinonimos de: " + palabra);
